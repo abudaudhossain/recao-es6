@@ -26,7 +26,16 @@ const multiLineArrowfunction = (num1, num2) => {
     return result;
 }
 
-console.log(fiveMulti(5));
+/* console.log(fiveMulti(5));
 console.log(twoParamiet(5, 3));
 console.log(threeParamitar(2, 3, 4));
-console.log(multiLineArrowfunction(3, 4))
+console.log(multiLineArrowfunction(3, 4));
+ */
+const work = num => num * 5;
+const arrNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+const newArray = arrNum.map(i => work(i));
+// const newArray = arrNum.map(x => x* 5);
+// console.log(newArray);
+
+const oddArray = arrNum.filter(i => i % 2 != 0);
+console.log(oddArray);
